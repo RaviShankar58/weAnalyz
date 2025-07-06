@@ -1,3 +1,4 @@
+
 ---
 
 # 🛠️ Helpdesk System – Frontend
@@ -18,13 +19,29 @@ This is the **frontend** of the Helpdesk Ticketing System built using **React** 
 
 You can log in using the following test credentials:
 
+### 👤 User
 ```
 
-Username:ravi
-Password:1111
+Username: user1
+Password: 11
 
 ```
 
+### 🏢 Operation Team
+```
+
+Username: operation1
+Password: 11
+
+```
+
+### 🛠 Technical Team
+```
+
+Username: technical1
+Password: 11
+
+```
 
 ---
 
@@ -46,7 +63,18 @@ frontend/
 ├── public/
 ├── src/
 │   ├── components/
-│   │   └── Layout.jsx         # Main layout with navigation
+│   │   ├── Layout.jsx
+│   │   ├── operation/
+│   │   │   ├── OperationDashboard.jsx
+│   │   │   ├── OperationLayout.jsx
+│   │   │   ├── OperationMyTickets.jsx
+│   │   │   ├── OperationPerformance.jsx
+│   │   │   └── OperationTicketApproval.jsx
+│   │   └── technical/
+│   │       ├── TechnicalDashboard.jsx
+│   │       ├── TechnicalLayout.jsx
+│   │       ├── TechnicalMyTickets.jsx
+│   │       └── TechnicalPerformance.jsx
 │   ├── pages/
 │   │   ├── SignIn.jsx
 │   │   ├── SignUp.jsx
@@ -55,8 +83,8 @@ frontend/
 │   │   ├── NewTicket.jsx
 │   │   ├── MyTickets.jsx
 │   │   └── Profile.jsx
-│   ├── App.js                 # Main routing setup
-│   └── index.js               # ReactDOM entry
+│   ├── App.js
+│   └── index.js
 ├── tailwind.config.js
 └── index.css
 
@@ -82,8 +110,6 @@ npm start
 
 App will run at `http://localhost:3000`
 
-
-
 ## 🔐 To Do (Backend)
 
 * Signup/Login with token-based auth
@@ -100,8 +126,4 @@ App will run at `http://localhost:3000`
 ---
 
 ```
-
----
-
-Let me know when you want the backend README or want me to generate a `.gitignore` file too.
 ```
